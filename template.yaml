@@ -7,19 +7,19 @@ meta:
   homepageUrl: https://javimogan.com
   donationUrl: https://www.paypal.me/javimogan
   filePaths:
-    - license.txt
+    - license
     - index.html
     - page.html
     - header.partial
     - footer.partial
-    - style.partial
+    - assets/style.partial
     - assets/tobi.css
     - assets/tobi.min.js
     - assets/favicon.png
+    - assets/feature-graphic.png
     - assets/og-image.png
     - assets/ios-mask-border-128.svg
     - assets/ios-mask.svg
-    - assets/icon.png
     - assets/logo.png
     - assets/light-background.svg
     - assets/dark-background.svg
@@ -48,7 +48,20 @@ dataContract:
             width: 1024
             height: 1024
             defaultFilePath: assets/logo.png
-
+          SHOW_FEATURE:
+            _label: Show feature graphic?
+            required: false
+            type: (boolean)
+            defaultValue: true
+          FEATURE_TITLE:
+            required: false
+            type: (text)
+            defaultValue: Feature graphic
+          FEAUTE_GRAPHIC:
+            type: (image)
+            width: 1024
+            height: 500
+            defaultFilePath: assets/feature-graphic.png
           GOOGLE_PLAY_IMAGE:
             type: (image)
             defaultFilePath: assets/google-play-badge.png
@@ -90,9 +103,17 @@ dataContract:
           TITLE:
             type: (text)
             defaultValue: Screenshots
+          WIDTH:
+            _label: Width in px
+            type: (text)
+            defaultValue: "300"
+          HEIGHT:
+            _label: Height in px
+            type: (text)
+            defaultValue: "500"
           IMAGES:
             type: (collection)
-            defaultOccurrences: 4
+            defaultOccurrences: 3
             properties:
               IMAGE:
                 type: (image)
@@ -155,6 +176,10 @@ dataContract:
       THEME:
         _label: Theme
         properties:
+          TOOGLE_THEME:
+            _label: Toogle theme?
+            type: (boolean)
+            defaultValue: true
           DEFAULT_MODE:
             _label: Light theme? (Light/Dark)
             type: (boolean)
@@ -192,7 +217,7 @@ dataContract:
           BACKGROUND_IMAGE:
             _label: Background image
             type: (image)
-            defaultFilePath: assets/light-background.svg
+            defaultFilePath: assets/dark-background.svg
           TEXT_COLOR:
             _label: Text color
             type: (color)
@@ -208,6 +233,9 @@ dataContract:
       META:
         _label: Meta
         properties:
+          AUTHOR:
+            type: (text)
+            _label: Author
           LANGUAGE:
             type: (choice)
             valuesSet: (iso6391Languages)
@@ -224,6 +252,9 @@ dataContract:
             type: (text)
             defaultValue: My Page Description
             _label: Page Description
+          KEYWORDS:
+            _label: Keywords (Separated by comma)
+            type: (text)
           FAVICON:
             type: (image)
             width: 32
@@ -240,6 +271,14 @@ dataContract:
             _label: Pre HTML
             _description: i.e. cookie banner
             required: false
+          ROBOTS_INDEX:
+            _label: Robots index
+            type: (boolean)
+            defaultValue: true
+          ROBOTS_LINKS:
+            _label: Robots follow links
+            type: (boolean)
+            defaultValue: false
       FOOTER:
         properties:
           COPYRIGHT:

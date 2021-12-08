@@ -1,12 +1,14 @@
 {{> header}}
 <header class="app__header container">
-	<div class="app__logo-wrapper"> <img class="app__logo" src="{{{$image APP.APP.ICON}}}" alt="{{APP.APP.APP_NAME}}"></div>
+	<div class="app__logo-wrapper"> <img class="app__logo" src="{{{$image APP.APP.ICON}}}" alt="{{APP.APP.APP_NAME}}">
+	</div>
 	<div class="app__infos">
 		<h1 class="app__name">{{APP.APP.APP_NAME}}</h1>
 		<p class="app__description">{{APP.APP.TAGLINE}}</p>
 		<div class="app__buttons app__buttons--desktop">
 			{{#if APP.APP.GOOGLE_PLAY_URL}}
-			<a href="{{APP.APP.GOOGLE_PLAY_URL}}" class="app__button-play" target="_blank" title="{{APP.APP.GOOGLE_PLAY_TITLE}}">
+			<a href="{{APP.APP.GOOGLE_PLAY_URL}}" class="app__button-play" target="_blank"
+				title="{{APP.APP.GOOGLE_PLAY_TITLE}}">
 				<img src="{{{$image APP.APP.GOOGLE_PLAY_IMAGE}}}" alt="{{APP.APP.GOOGLE_PLAY_TITLE}}">
 			</a>
 			{{/if}}
@@ -25,7 +27,8 @@
 </header>
 <div class="app__buttons app__buttons--mobile container">
 	{{#if APP.APP.GOOGLE_PLAY_URL}}
-	<a href="{{APP.APP.GOOGLE_PLAY_URL}}" class="app__button-play" target="_blank" title="{{APP.APP.GOOGLE_PLAY_TITLE}}">
+	<a href="{{APP.APP.GOOGLE_PLAY_URL}}" class="app__button-play" target="_blank"
+		title="{{APP.APP.GOOGLE_PLAY_TITLE}}">
 		<img src="{{{$image APP.APP.GOOGLE_PLAY_IMAGE}}}" alt="{{APP.APP.GOOGLE_PLAY_TITLE}}">
 	</a>
 	{{/if}}
@@ -40,6 +43,18 @@
 	</a>
 	{{/if}}
 </div>
+{{#if APP.APP.SHOW_FEATURE}}
+<section class="app__feature-container app__section">
+	<div class="container">
+		<h2 class="app__section-title">{{APP.APP.FEATURE_TITLE}}</h2>
+	</div>
+	<div class="app__feature-wrapper">
+		<!-- <a href="{{$image APP.APP.FEAUTE_GRAPHIC}}" class="lightbox"> -->
+		<img src="{{$image APP.APP.FEAUTE_GRAPHIC}}" class="app__feature" alt="" />
+		<!-- </a> -->
+	</div>
+</section>
+{{/if}}
 {{#if APP.SCREENSHOTS.SHOW}}
 <section class="app__screenshots app__section">
 	<div class="container">
@@ -47,11 +62,11 @@
 	</div>
 	<div class="app__screenshots-wrapper container-desktop">
 		<div class="app__screenshots-list">
-		{{#each APP.SCREENSHOTS.IMAGES}}
+			{{#each APP.SCREENSHOTS.IMAGES}}
 			<a href="{{{$image IMAGE}}}" class="lightbox">
 				<img src="{{{$image IMAGE}}}" class="app__screenshot" alt="" />
 			</a>
-		{{/each}}
+			{{/each}}
 		</div>
 	</div>
 </section>
@@ -69,9 +84,9 @@
 	<h2 class="app__section-title">{{APP.FEATURED_IN.TITLE}}</h2>
 	<div class="app__featured-content">
 		{{#each APP.FEATURED_IN.FEATURES}}
-		<a href="{{URL}}" target="_blank" class="app__featured-company"> 
+		<a href="{{URL}}" target="_blank" class="app__featured-company">
 			<img src="{{{$image IMAGE}}}" class="app__featured-image">
-		</a> 
+		</a>
 		{{/each}}
 	</div>
 </section>

@@ -33,7 +33,20 @@
 				var tobi = new Tobi();
 			};
 		</script>
-
+		{{#if COMMON.THEME.TOOGLE_THEME}}
+		<script>
+			window.onload = function () {
+					document.querySelector('#toggle-theme').addEventListener('change', (event) => {
+						if(event.target.checked){
+							document.getElementsByTagName("html")[0].className = "";
+						}else{
+							document.getElementsByTagName("html")[0].className = "theme-dark";
+						}
+						
+					});
+			};
+		</script>
+		{{/if}}
 		{{#if COMMON.FOOTER.POST_HTML}}
 			{{{$html COMMON.FOOTER.POST_HTML}}}
 		{{/if}}
