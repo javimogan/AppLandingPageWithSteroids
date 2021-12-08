@@ -229,6 +229,9 @@ html[dir=rtl] .app__logo-wrapper {
     margin-bottom: 0;
   }
 }
+.app__screenshot-a{
+  text-align:center;
+}
 .app__screenshots-list {
   display: grid;
   grid-template-columns: repeat(6, var(--screenshot-width));
