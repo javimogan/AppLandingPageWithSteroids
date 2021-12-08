@@ -234,6 +234,7 @@ dataContract:
         _label: Meta
         properties:
           AUTHOR:
+            required: false
             type: (text)
             _label: Author
           LANGUAGE:
@@ -253,6 +254,7 @@ dataContract:
             defaultValue: My Page Description
             _label: Page Description
           KEYWORDS:
+            required: false
             _label: Keywords (Separated by comma)
             type: (text)
           FAVICON:
