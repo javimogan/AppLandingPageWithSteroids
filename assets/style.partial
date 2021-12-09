@@ -6,8 +6,8 @@
   --font-xs: 16px;
   --font-xxs: 14px;
 
-  --screenshot-width: {{APP.SCREENSHOTS.WIDTH}}px;
-  --screenshot-height: {{APP.SCREENSHOTS.HEIGHT}}px;
+  --screenshot-width: {{#if APP.SCREENSHOTS.INCLUDE_LANDSCAPE}}500{{else}}300{{/if}}px;
+  --screenshot-height: {{#if APP.SCREENSHOTS.INCLUDE_LANDSCAPE}}300{{else}}500{{/if}}px;
   /* Light */
   --background-light: {{COMMON.LIGHT_THEME.BACKGROUND_COLOR}};
   --background-image-light: url({{$image COMMON.LIGHT_THEME.BACKGROUND_IMAGE}});

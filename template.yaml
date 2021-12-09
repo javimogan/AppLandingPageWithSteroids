@@ -103,14 +103,11 @@ dataContract:
           TITLE:
             type: (text)
             defaultValue: Screenshots
-          WIDTH:
-            _label: Width in px
-            type: (text)
-            defaultValue: "300"
-          HEIGHT:
-            _label: Height in px
-            type: (text)
-            defaultValue: "500"
+            
+          INCLUDE_LANDSCAPE:
+            _label: One or more screenshots are in landscape?
+            type: (boolean)
+            defaultValue: false
           IMAGES:
             type: (collection)
             defaultOccurrences: 3
