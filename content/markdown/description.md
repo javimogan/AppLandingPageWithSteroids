@@ -1,4 +1,3 @@
-# AppLandingPageWithSteroids
 This template is a remix.
 
 The [original template](https://github.com/sandoche/Mobile-app-landingpage-template) was designed by [Sandoche Adittane](https://www.sandoche.com/)
