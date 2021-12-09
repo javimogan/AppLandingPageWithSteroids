@@ -8,6 +8,7 @@
 
 
 **_This template is a remix._**
+
 The [original template](https://github.com/sandoche/Mobile-app-landingpage-template) was designed by [Sandoche Adittane](https://www.sandoche.com/).
 
 This new version, among others, includes the following features:
