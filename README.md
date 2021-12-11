@@ -10,7 +10,7 @@
 **_This template is a remix._**
 The [original template](https://github.com/sandoche/Mobile-app-landingpage-template) was designed by [Sandoche Adittane](https://www.sandoche.com/).
 
-This new version, among others, includes the following features:
+💡 This new version, among others, includes the following features:
 - Dark theme.
 - Button to change the theme.
 - More predefined SEO tags.
@@ -28,9 +28,9 @@ Here are some tips and guides on how to design a good web page.
 1.  Read the [Search Engine Optimization (SEO) Starter Guide by Google](https://developers.google.com/search/docs/beginner/seo-starter-guide).
 2. [Google Play  badge page](https://play.google.com/intl/en_us/badges/).
 
-## Examples
+## 👁️ Examples
 This template is used in the following web pages.
-- [Gasofapp - Gasolineras España](https://gasofapp.javimogan.com/)
+- [Gasofapp - Gasolineras España](https://gasofapp.javimogan.com/).
 
 # 🌚 About authors
 <!-- About Author -->
