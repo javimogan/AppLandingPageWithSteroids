@@ -1,3 +1,4 @@
+
 # Mobile App Landing Page Template with Steroids
 <p align="center">
 <img src="https://github.com/javimogan/AppLandingPageWithSteroids/blob/main/assets/Preview.png?raw=true"
@@ -60,14 +61,10 @@ This template is used in the following web pages.
 	</tr>
 	<tr id="info_commit">
 		<td id="javimogan" align="center">
-			<a href="/commits?author=javimogan" title="Developer">
 				<span id="role">💻</span>
-			</a>
 		</td>
 		<td id="javimogan" align="center">
-			<a href="/commits?author=sandoche" title="Developer">
 				<span id="role">💻</span>
-			</a>
 		</td>
 	</tr>
 </table>
