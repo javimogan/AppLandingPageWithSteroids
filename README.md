@@ -17,12 +17,11 @@ This new version, among others, includes the following features:
 - The size of the screenshots has been modified to incorporate both landscape and portrait images.
 - A new image for feature graphic.
 
-## How to use
-1.  Go to  [T3MPL Editor](https://t3mpl.n4no.com/editor).
-2. Import template file type `.t3mpl`.
-3.  Edit the settings on the left part.
-4.  Click on the  `Publish`  button then  `Save Webpage as .zip`.
-5.  Unzip and upload the folder to your server (f.e. Google firebase Hosting is free).
+## ✏️ Create your website
+1. Go to  [https://t3mpl.n4no.com/editor/#manifest=../templates/app-landing-page-with-steroids/template.yaml](https://t3mpl.n4no.com/editor/#manifest=../templates/app-landing-page-with-steroids/template.yaml).
+2. Edit the settings on the left part.
+3.  Click on the  `Publish`  button then  `Save Webpage as .zip`.
+4.  🚀 Unzip and upload the folder to your server (f.e. Google firebase Hosting is free).
 
 ## Tips
 Here are some tips and guides on how to design a good web page.
