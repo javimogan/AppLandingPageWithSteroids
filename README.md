@@ -7,8 +7,7 @@
 </p>
 
 
-**_This template is a remix._**
-The [original template](https://github.com/sandoche/Mobile-app-landingpage-template) was designed by [Sandoche Adittane](https://www.sandoche.com/).
+_**This template is a remix.** The [original template](https://github.com/sandoche/Mobile-app-landingpage-template) was designed by [Sandoche Adittane](https://www.sandoche.com/)._
 
 💡 This new version, among others, includes the following features:
 - Dark theme.
